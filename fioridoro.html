@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="reset.css">
+        <title>
+            Fiori D'oro | by Ioana Andreica
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylefioridoro.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="left_nav_bar">
+                <div class="products_drop_down">
+                    <div class="left_nav_cell" id = "products">products</div>
+                    <div class="list js-close-popup">
+                        <div class="list_f_display">
+                            <div class="flowers_balloons">
+                                <span class="span-products">flowers</span>
+                                <ul>
+                                    <li>floral arrangements</li>
+                                    <li>bouquet</li>
+                                    <li>extra</li>
+                                </ul>
+                            </div>
+                            <div class="flowers_balloons">
+                                <span class="span-products">ballons</span>
+                                <ul>
+                                    <li>balloons arrangements</li>
+                                    <li>bouquet</li>
+                                    <li>extra</li>
+                                </ul>
+                            </div>
+                            <div class="img_right">
+                            <img src="images/Lorenzo_Smith_Judith Rae_peonies.jpg" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_nav_cell" id="studio">studio</div>
+                <div class="inspiration_drop_down">  
+                    <div class="left_nav_cell" id="inspiration">inspiration</div>
+                    <div class="inspiration_items js-close-popup">
+                        <span class="span-inspiration">gallery</span>
+                        <span class="span-inspiration">journal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <div class="main_logo">Fiori D'oro</div>
+                <div class="subtitle_logo">by Ioana Andeica</div>
+            </div>
+            <div class="right_nav_bar">
+                <div class="right_nav_cell">support</div>
+                <div class="right_nav_cell">search</div>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="box">
+                <div class="header_box">
+                    <span class="title_header_box">Fiori D'oro</span>
+                    <span class="subtitle_header_box">by Andreica Ioana</span>
+                </div>
+                <div class="content_box">
+                    <h3>Experience the Fiori D'oro difference</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <button>contact us</button>
+                </div>
+            </div>
+        </div>
+        <div class="second_page">
+            <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."</p>
+        </div>
+        <div class="third_page">
+            <div class="img_container">
+                <div class="img_header">
+                    <span class="name">ioana andreica</span>
+                    <span class="function">general manager</span>
+                </div>
+                <img class="portrait" src="images/girl2.jpg">
+            </div>
+        </div>
+        <div class="fourth_page">
+            <div class="image_background">
+                <div class="content_flex">
+                    <div class="box_for_visit">
+                        <div class="header_box_visit">
+                            <span>Visit our showroom</span>
+                        </div>
+                        <div class="content_box_visit">
+                            <p class="title_visit">Fiori D'oro Flower Studio</p>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+                  <div class="info">
+                      <div class="adress">
+                          <div class="title_info">find us at</div>
+                          <div class="container_details">
+                              <p>44 Slatina Street</p>
+                              <p>Cluj-Napoca</p>
+                          </div>
+                          <button class="details_button">get directions</button>
+                      </div>
+                      <div class="phone_number">
+                          <div class="title_info">Talk to our team</div>
+                          <div class="container_details">
+                              <p>phone</p>
+                              <p>0744 569 325</p>
+                          </div>
+                          <button class="details_button">call</button>
+                      </div>
+                      <div class="schedule">
+                          <div class="title_info">Studio Hours</div>
+                          <div class="container_details">
+                              <div class="days">
+                                  <p>Mon-Fri:</p>
+                                  <p>Sat</p>
+                              </div>
+                              <div class="hours">
+                                  <p>9AM-16.30</p>
+                                  <P>9AM - 13.00</P>
+                              </div>
+                          </div>
+                      </div>
+                  </div>    
+            </div> 
+            <div class="opacity"></div>
+          </div>
+        <script>
+            var $$ = function(selector){
+                return document.querySelector(selector);
+            };
+            var showElement = function(selector){
+                if($$(selector).style.display=="block"){
+                    $$(selector).style.display="none";
+                }
+                else{$$(selector).style.display="block"}
+            };
+            var hide = function(selector){
+                    $$(selector).style.display="none";
+                    console.log("hiding"+ selector);
+                };
+    
+            var show = function(selector){
+                    $$(selector).style.display="block"
+                };
+                    
+    
+            $$("#products").addEventListener("click", function(){
+                showElement(".list");
+            });
+            $$("#products").addEventListener("mouseover", function(){
+                hide(".js-close-popup");
+                show(".list");
+            });
+             
+           
+    
+            $$("#inspiration").addEventListener("click", function(){
+                showElement(".inspiration_items");
+            });
+            $$("#inspiration").addEventListener("mouseover",function(){
+                hide(".js-close-popup");
+                show(".inspiration_items");
+            });
+            
+            var header = document.getElementById("header");
+            function resizeHeader(){
+                if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10){
+                    header.style.padding = "20px 30px"
+                }else{
+                    header.style.padding = "30px";
+                }
+            };
+            window.addEventListener("scroll", resizeHeader);
+    
+            var text = document.querySelector(".second_page p")
+            console.log(text)
+            // schedule
+            var date = new Date();
+            var hourNow = date.getHours();
+            var minutes = date.getMinutes();
+            var day = date.getDay();
+            var studioHours = document.getElementsByClassName("title_info")[2];
+            if ((day <= 5) && (hourNow >= 9) && (hourNow < 16)){
+               studioHours.innerHTML = "open now"
+            }else if((day<=5) && (hourNow >= 9) && (hourNow <= 16) && (minutes <= 30)){
+                studioHours.innerHTML="open now"
+            }else if ((day == 7) && (hourNow>=9) && (hourNow<13)){
+                studioHours.innerHTML="open now"
+            }
+            else{
+                studioHours.innerHTML = "closed now"
+            };
+           
+        </script>
+    </body>
+</html>

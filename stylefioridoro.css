@@ -1,0 +1,332 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+#header{
+    display: none;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    position: sticky;
+    padding:30px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    box-sizing: border-box;
+    z-index: 3;
+}
+.left_nav_bar, .right_nav_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    text-transform: uppercase;
+    font-size:13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.left_nav_cell, .right_nav_cell{
+    margin-right:25px;
+}
+.left_nav_cell, .right_nav_cell:hover{
+    cursor: pointer;
+}
+#products:hover{
+    cursor: pointer;
+}
+.list{
+    display:none;
+    position: absolute;
+    top:100%;
+    box-sizing: border-box;
+    background-color: white;
+    color:black;
+    width: 89%;
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.list_f_display{
+    display:flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+}
+img{
+    width: 493px;
+    height: 329px;
+    
+}
+.span-products{
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-bottom: solid black 1px;
+    margin: 10px 10px 10px 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+li{
+    padding-bottom:10px;
+    margin:10px 10px 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+    cursor: pointer;
+    }
+li:hover{
+    text-decoration: underline;
+}
+
+.flowers_balloons{
+    display: inline-block;
+}
+.logo{
+    position: relative;
+    transform: translatex(-50%);
+    display: inline-block;
+    box-sizing: border-box;
+    color:white;
+}
+.main_logo{
+    font-family: 'Caveat', cursive;
+    font-size:30px;
+}
+.subtitle_logo{
+    font-size:10px;
+}
+.span-inspiration{
+    display: block;
+    padding-bottom:10px;
+    margin:10px 10px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+    cursor: pointer;
+    box-sizing: border-box;
+    color:black;
+}
+.inspiration_items{
+    display: none;
+    padding: 20px;
+    position: absolute;
+    top:100%;
+    box-sizing: border-box;
+    background-color: white;
+    width: 30%;
+    animation: transitionIn 0.75s;
+}
+.title_header_box, .subtitle_header_box{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.title_header_box{
+    font-size: 23px;
+    font-weight: 900;
+}
+.subtitle_header_box{
+    font-size: 13px;
+}
+
+.box{
+    margin-left: 30px;
+    background-color: white;
+    width: 360px;
+}
+.header_box{
+   background-color: black;
+   padding: 15px 40px;
+}
+.content_box{
+    background-color: #ffe6ee;
+    padding: 40px;
+    box-sizing: border-box;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.content_box p{
+    margin-top: 15px;
+    line-height: 1.7;
+    font-size: 15px;
+}
+button{
+    text-transform: uppercase;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 0px;
+    margin-top: 10px;
+    background-color: #ffe6ee;
+    color: black;
+    cursor: pointer;
+    border: 1px solid;
+}
+button:hover{
+    background-color: black;
+    color: #ffe6ee;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    height:100vh;
+    background-color: black;
+    background-image: url("images/image.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.second_page{
+    box-sizing: border-box;
+    padding: 140px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.second_page p {
+    font-size: 25px;
+    font-weight: bolder;
+    display: block;
+    width: 60%;
+    line-height: 1.7;
+    text-align: center;
+    color: #ffe6ee;
+}
+.third_page{
+    background-color: #ffe6ee;
+    display: flex;
+    justify-content: center;
+}
+.img_container{
+    position: relative;
+    top:-38px;
+    display: inline-block;
+    z-index: 1;
+}
+.img_header{
+    height: 38px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ffe6ee;
+}
+.img_header span{
+    display:block;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+.name{
+    font-weight: bolder;
+}
+.function{
+    font-size: 13px;
+}
+.portrait{
+    width: 300px;
+    height: 375px;
+}
+.fourth_page {
+    margin-top: 140px;
+    margin-bottom: 140px;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: black;
+    background-image: url("images/Bouquet_in_a_tree_\(Unsplash\).jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: relative;
+  }
+  .opacity {
+    background-color: #00000073;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .image_background {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    width: 100%;
+  }
+  .info {
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin:0px 200px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+  .title_info{
+      padding: 0px 0px 5px;
+      margin: 0px 0px 20px;
+      border-bottom: solid 1px #ffe6ee;
+      font-size: 20px;
+  }
+  .adress, .phone_number{
+      display: flex;
+      flex-direction: column;
+      align-content: flex-end;
+  }
+  .details_button{
+      background-color: transparent;
+      color:#ffe6ee;
+  }
+  .box_for_visit{
+    width: 330px;
+    margin-bottom: 50px;
+  }
+  .header_box_visit{
+      background-color: #ffe6ee;
+      color: black;
+      padding: 15px 40px;
+      text-align: center;
+  }
+  .header_box_visit span{
+      font-size: 23px;
+      font-weight: bolder;
+  }
+  .content_box_visit{
+    background-color: black;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  .content_box_visit p{
+      line-height: 1.7;
+      color: #ffe6ee;
+  }
+  .title_visit{
+      color: #ffe6ee;
+      padding: 20px 0px;
+      font-size: 20px;
+  }
+  .content_flex{
+      position: relative;
+      transform: translateY(-52.4px);
+      width: 80%;
+      display: flex;
+      justify-content: flex-end;
+  }
+  .details_button:hover{
+      background-color: #ffe6ee;
+      color: black;
+  }
+  .container_details{
+      margin-bottom: 20px;
+      line-height: 1.7;
+  }
+  .schedule .container_details{
+      display: flex;
+      justify-content: space-between;
+  }
